@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Login
+	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+	link(rel="stylesheet", href="login.css")
+	link(href="https://file.myfontastic.com/dm7jDenL4r7N6cNfdgKQsZ/icons.css" rel="stylesheet")
+body
+	main
+		header
+			.header__img
+			.header__buttons
+				a.inicio(href="#") Inicio
+				.banderas
+					a(href="#" title="Español").__link
+						.espana
+					a(href="#" title="Catalán").__link
+						.catalunya
+					a(href="#" title="Inglés").__link
+						.reino-unido
+		section
+			.section__form
+				form(action="#" method="post")
+					h1.form__titulo Login				
+					input.input-100(type="correo", name="nombre", placeholder="Correo Electronico")
+					input.input-100(type="password", name="apellido", placeholder="Contraseña")
+					input.btn-enviar(type="submit", value="Registrate")
+					.link
+						a.form__link(href="#") ¿Aún no dispones de una cuenta? Registrate aquí.
+
+		footer.footer
+			.footer__about
+				p  &copy Proyecto Transversal 2016.
+				p All rights reserved.
+			.footer__social
+				a.icon.icon-facebook(href="#")
+				a.icon.icon-twitter(href="#")
+				a.icon.icon-instagram(href="#")
+				a.icon.icon-google-plus(href="#")
+
+	

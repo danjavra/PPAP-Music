@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html, body, ul, ol, ::before, :before, ::after, :after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto'; }
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: url("fondo__form_v2.jpg");
+  background-size: cover;
+  background-position: center; }
+
+/*** HEADER ***/
+.header__img {
+  width: 100%;
+  height: 150px;
+  background: url("header__img.jpg");
+  background-size: cover; }
+
+.header__img:hover {
+  background: url("header__img_ryuk_v2.jpg");
+  background-size: cover; }
+
+.header__buttons {
+  width: 100%;
+  height: 60px;
+  padding: 1em;
+  background: linear-gradient(30deg, pink, blue);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.header__buttons .inicio {
+  text-decoration: none;
+  color: white;
+  background: #21a1e1;
+  padding: .5em 1.5em;
+  transition: all ease-in-out 0.4s; }
+
+.header__buttons .inicio:hover {
+  background: #1982b6; }
+
+.header__buttons .banderas {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .header__buttons .banderas .espana,
+  .header__buttons .banderas .catalunya,
+  .header__buttons .banderas .reino-unido {
+    margin: 1em;
+    transition: all 0.3s ease-in-out;
+    opacity: .75; }
+    .header__buttons .banderas .espana:hover,
+    .header__buttons .banderas .catalunya:hover,
+    .header__buttons .banderas .reino-unido:hover {
+      opacity: 1;
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      transform: scale(1.3); }
+  .header__buttons .banderas .espana {
+    width: 40px;
+    height: 25px;
+    background: url(../img/espana.png);
+    background-size: cover; }
+  .header__buttons .banderas .catalunya {
+    width: 40px;
+    height: 25px;
+    background: url(../img/catalunya.png);
+    background-size: cover; }
+  .header__buttons .banderas .reino-unido {
+    width: 40px;
+    height: 25px;
+    background: url(../img/reino-unido.png);
+    background-position: center center;
+    background-size: cover; }
+
+/*** footer *****/
+.footer {
+  background: linear-gradient(30deg, pink, blue);
+  padding: 1em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 150px; }
+
+.footer__about,
+.footer__social {
+  width: 50%;
+  min-height: 100%; }
+
+.footer__about {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center; }
+  .footer__about p {
+    font-size: 1.1em;
+    width: 100%; }
+
+.footer__social {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .footer__social a {
+    background: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    color: black;
+    margin: .5em;
+    padding: 1em;
+    line-height: 1em;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all ease-in-out 0.5s; }
+  .footer__social .icon-facebook:hover {
+    background: #295396;
+    color: #fff; }
+  .footer__social .icon-twitter:hover {
+    background: #2EACF8;
+    color: #fff; }
+  .footer__social .icon-instagram:hover {
+    background: #986954;
+    color: #fff; }
+  .footer__social .icon-google-plus:hover {
+    background: #DC4A38;
+    color: #fff; }
+
+section {
+  width: 100%;
+  min-height: 800px;
+  position: relative; }
+  section .propuestas__title, section .propuestas__subtitle {
+    text-align: center;
+    margin: 1.5em 0;
+    font-size: 1.7em; }
+  section .tablas__container {
+    height: 600px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background-size: cover;
+    padding: 1em; }
+    section .tablas__container .inscritos__subtitle {
+      text-align: center;
+      margin: 1em 0;
+      background: rgba(33, 161, 225, 0.6);
+      padding: 1em;
+      width: 100%;
+      color: white;
+      border-radius: .5em; }
+  section .propuestas__conciertos {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    margin-top: 1.5em; }
+    section .propuestas__conciertos .propuestas__tabla {
+      width: 60%;
+      height: 250px;
+      background: rgba(255, 255, 255, 0.4);
+      display: table;
+      text-align: center;
+      border-radius: 1em; }
+      section .propuestas__conciertos .propuestas__tabla .contenido {
+        display: table-row; }
+      section .propuestas__conciertos .propuestas__tabla .columna1, section .propuestas__conciertos .propuestas__tabla .columna2, section .propuestas__conciertos .propuestas__tabla .columna3 {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 1em; }
+        section .propuestas__conciertos .propuestas__tabla .columna1:hover, section .propuestas__conciertos .propuestas__tabla .columna2:hover, section .propuestas__conciertos .propuestas__tabla .columna3:hover {
+          background: rgba(255, 255, 255, 0.5);
+          transition: all 0.6s; }
+        section .propuestas__conciertos .propuestas__tabla .columna1:not(.hover), section .propuestas__conciertos .propuestas__tabla .columna2:not(.hover), section .propuestas__conciertos .propuestas__tabla .columna3:not(.hover) {
+          border-top-left-radius: 1em; }
+      section .propuestas__conciertos .propuestas__tabla .local {
+        border-bottom-left-radius: 1em; }
+      section .propuestas__conciertos .propuestas__tabla .stado {
+        border-top-right-radius: 1em; }
+      section .propuestas__conciertos .propuestas__tabla .stado1 {
+        border-bottom-right-radius: 1em; }
+    section .propuestas__conciertos .propuestas__img {
+      width: 35%;
+      height: 250px;
+      border-radius: 1em;
+      background: url("chica.jpg");
+      background-size: cover;
+      background-position: center right; }
+  section .conciertos__inscritos {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    section .conciertos__inscritos .inscritos__tabla {
+      width: 98%;
+      height: 250px;
+      background: rgba(255, 255, 255, 0.4);
+      display: table;
+      text-align: center;
+      border-radius: 1em; }
+      section .conciertos__inscritos .inscritos__tabla .contenido {
+        display: table-row; }
+      section .conciertos__inscritos .inscritos__tabla .columna1, section .conciertos__inscritos .inscritos__tabla .columna2, section .conciertos__inscritos .inscritos__tabla .columna3, section .conciertos__inscritos .inscritos__tabla .columna4, section .conciertos__inscritos .inscritos__tabla .columna5, section .conciertos__inscritos .inscritos__tabla .columna6 {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 1em; }
+        section .conciertos__inscritos .inscritos__tabla .columna1:hover, section .conciertos__inscritos .inscritos__tabla .columna2:hover, section .conciertos__inscritos .inscritos__tabla .columna3:hover, section .conciertos__inscritos .inscritos__tabla .columna4:hover, section .conciertos__inscritos .inscritos__tabla .columna5:hover, section .conciertos__inscritos .inscritos__tabla .columna6:hover {
+          background: rgba(255, 255, 255, 0.5);
+          transition: all 0.6s; }
+      section .conciertos__inscritos .inscritos__tabla .local:hover {
+        border-top-left-radius: 1em; }
+      section .conciertos__inscritos .inscritos__tabla .local1:hover {
+        border-bottom-left-radius: 1em; }
+      section .conciertos__inscritos .inscritos__tabla .dir:hover {
+        border-top-right-radius: 1em; }
+      section .conciertos__inscritos .inscritos__tabla .dir1:hover {
+        border-bottom-right-radius: 1em; }

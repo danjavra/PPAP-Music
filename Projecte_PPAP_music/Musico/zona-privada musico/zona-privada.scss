@@ -1,0 +1,169 @@
+@import '../modulos/normalize.scss';
+@import '../modulos/header.scss';
+
+
+section{
+	width: 100%;
+	min-height: 800px;
+	position: relative;
+
+
+
+
+	.propuestas__title,.propuestas__subtitle{
+		text-align: center;
+		margin: 1.5em 0;
+		font-size: 1.7em
+	}
+
+
+
+	.tablas__container{
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		background-size: cover;
+		padding: 1em;
+
+
+		.inscritos__subtitle{
+			text-align: center;
+			margin: 1em 0;
+			background: rgba(#21a1e1, .6);
+			padding: 1em;
+			width: 100%;
+			color: white;
+			border-radius: .5em
+		}
+	}
+
+	.propuestas__conciertos{
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 1em;
+		margin-top: 1.5em;
+
+		.propuestas__tabla{
+			
+			width: 60%;
+			height: 250px;
+			background: rgba(white,0.4);
+			display: table;
+			text-align: center;
+			border-radius: 1em;
+			
+
+
+			.contenido {
+			    display: table-row;
+			}
+			.columna1, .columna2, .columna3 {
+			    display: table-cell;
+			    vertical-align: middle;
+			    padding: 1em;
+
+			    &:hover{
+			    	background: rgba(white, .5);
+			    	transition: all 0.6s;
+			    }
+
+			    &:not(.hover){
+			    	border-top-left-radius: 1em;
+			    }
+
+			
+			
+			}
+
+
+			.local{
+				border-bottom-left-radius: 1em;
+			}
+
+			.stado{
+				border-top-right-radius: 1em;
+			}
+
+			.stado1{
+				border-bottom-right-radius: 1em;
+			}
+
+					}
+
+		.propuestas__img{
+			width: 35%;
+			height: 250px;
+			border-radius: 1em;
+			background: url('chica.jpg');
+			background-size: cover;
+			background-position: center right;
+		}
+
+	}
+
+
+	.conciertos__inscritos{
+
+		display: flex;
+		justify-content: space-around;
+
+		
+
+		.inscritos__tabla{
+			width: 98%;
+			height: 250px;
+			background: rgba(white, .4);
+			display: table;
+			text-align: center;
+			border-radius: 1em;
+
+			.contenido {
+			    display: table-row;
+
+
+			}
+			.columna1, .columna2, .columna3, .columna4, .columna5, .columna6 {
+			    display: table-cell;
+			    vertical-align: middle;
+			    padding: 1em;
+
+			    &:hover{
+			    	background: rgba(white, .5);
+			    	transition: all 0.6s;
+			    }
+		   
+			}
+
+
+			.local{
+				&:hover{
+					border-top-left-radius: 1em;
+					}
+			    }
+
+			.local1{
+				&:hover{
+					border-bottom-left-radius: 1em;
+					}
+			    }
+
+			 .dir{
+				&:hover{
+					border-top-right-radius: 1em;
+				}
+			 }
+
+			 .dir1{
+				&:hover{
+					border-bottom-right-radius: 1em;
+				}
+			 }
+
+		}
+	}
+
+
+
+
+}

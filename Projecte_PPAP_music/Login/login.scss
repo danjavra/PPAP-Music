@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$background-buttons: linear-gradient(
+					30deg,
+					pink,
+					blue);
+
+*{
+	box-sizing: border-box;
+	font-family: 'Roboto';
+}
+
+html, body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+main{
+	width: 100%;
+	height: 100vh;
+	background: black;
+}
+
+
+
+.header__img{
+	width: 100%;
+	height: 150px;
+	background: url('header__img.jpg');
+	background-size: cover;
+	// background-position: center center;
+
+	&:hover{
+		background: url('header__img_ryuk_v2.jpg');
+		background-size: cover;
+	}
+}
+
+.header__buttons{
+	width: 100%;
+	height: 60px;
+	background: $background-buttons;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+
+
+
+	.inicio{
+	  text-decoration: none;
+	  color: white;
+	  background: #21a1e1;
+	  padding: .5em 1.5em;
+	  transition: all ease-in-out 0.4s;
+
+	  &:hover{
+	  	background: darken(#21a1e1, 10%);
+	  }
+	}
+
+	
+
+
+}
+
+.header__buttons .banderas {
+
+  display: flex;
+  margin-left: 1em;
+
+  .espana,
+  .catalunya,
+  .reino-unido{
+  	opacity: .75;
+    margin: 1em;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+		opacity: 1;
+      	transform: scale(1.3);
+    }
+    
+
+  }
+
+
+
+    .espana,{
+      width: 40px;
+      height: 25px;
+      background: url(../img/espana.png);
+      background-size: cover;
+    }
+
+    .catalunya,{
+      width: 40px;
+      height: 25px;
+      background: url(../img/catalunya.png);
+      background-size: cover;
+    }
+
+    .reino-unido,{
+      width: 40px;
+      height: 25px;
+      background: url(../img/reino-unido.png);
+      background-position: center center;
+      background-size: cover;
+    }
+}
+
+form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+.form__titulo{
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	background: rgba(#21a1e1, .6);
+	padding: 1em;
+	font-weight: 100;
+	font-size: 32px;
+	border-radius: 0.4em;
+
+}
+
+section{
+	position: relative;
+	width: 100%;
+	height: 700px;
+	background: #204862;
+	background: url('fondo__form_v2.jpg');
+	background-size: cover;
+}
+
+.section__form{
+
+	width: 95%;
+	max-width: 600px;
+	height: 600px;
+	margin: auto;
+	padding: 1em 2em;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(white, 0.4);
+	border-radius: 0.4em;
+
+
+	input{
+		margin-bottom: 2em;
+		padding: 1em;
+		border-radius: 0.4em;
+		border: 1px solid darkgrey;
+		transition: all 0.2s;
+
+		&:hover{
+			box-shadow: 0 0 0 2px #21a1e1 inset;
+		}
+	}
+
+
+	.input-48{
+		width: 48%;
+		font-size: 15px;
+	}
+
+	.input-100{
+		width: 100%;
+		font-size: 15px;
+	}
+
+	.btn-enviar{
+		margin: auto;
+		background: #21a1e1;
+		color: #fff;
+		border: none;
+		display: block;
+		padding: 1em 3em;
+		cursor: pointer;
+		font-size: 18px;
+
+		&:active{
+			transform: scale(.9);
+		}
+
+
+		&:hover{
+			background: darken(#21a1e1,10%);
+			transition: all 0.5s;
+		}
+
+	}
+
+	.link{
+		width: 100%;
+		text-align: center;
+		transition: all 0.5s ease-in-out;
+		font-size: 11px;
+		margin-top: .5em;
+
+		&:hover{
+			transform: scale(1.1);
+			}
+			
+	}
+	
+
+	
+}
+
+
+.footer{
+  background: linear-gradient(30deg, pink, blue);
+  padding: 1em;
+  display: flex;
+  min-height: 150px;
+}
+
+  .footer__about, 
+  .footer__social{
+    width: 50%;
+    min-height: 100%;
+  }
+
+  .footer__about{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+    p{
+      font-size: 1.1em;
+      width: 100%;
+    }
+  }
+
+  .footer__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+      background: rgba(white, .8);
+      text-decoration: none;
+      color: black;
+      margin: .5em;
+      padding: 1em;
+      line-height: 1em;
+      font-size: 20px;
+      border-radius: 50%;
+      transition: all ease-in-out 0.5s;
+    }
+
+    .icon-facebook:hover{
+     background: #295396;
+     color: #fff;
+     }
+    .icon-twitter:hover{
+      background: #2EACF8;
+      color: #fff;
+      }
+    .icon-instagram:hover{
+      background: #986954;
+      color: #fff;
+      }
+    .icon-google-plus:hover{
+      background: #DC4A38;
+      color: #fff;
+      }
+  }
+
+@media (max-width: 400px){
+
+	main{
+		height: 1200px;
+	}
+
+	footer{
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.footer__about{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+
+		.footer__social{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 5em;
+
+		}
+		
+
+		
+	}
+}
+
+

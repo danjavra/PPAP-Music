@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro Fan</title>
+        
+        <link href="registro_fan.css" rel="stylesheet" type="text/css"/>
+        <link href="https://file.myfontastic.com/dm7jDenL4r7N6cNfdgKQsZ/icons.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+        <div class="header">
+            <div class="imagen"></div>        
+        </div>
+        <div class="buttons">
+            <div class="inicio">
+                <a href="../Home/MAINPAGE.php">Inicio</a>
+            </div>
+            <div class="idioma">      
+                <a href="">
+                    <div class="espana"></div>
+                </a>
+                <a href="">
+                    <div class="catalunya"></div>
+                </a>
+                <a href="">
+                    <div class="reino-unido"></div>
+                </a>
+            </div>
+        </div>
+        <div class="body">         
+               <div class="content">
+                <h1 class="titulo__form">Formulario de registro para fan</h1>
+                <form action="#" method="post">
+                <div class="datospropietario">
+                    <p>Introducir datos del fan:</p>
+                     <input class="input-32" required maxlength="10" type="text" name="name" placeholder="Nombre">
+                     <input class="input-32" required maxlength="10" type="text" name="apellido1" placeholder="1er Apellido">
+                     <input class="input-32" required maxlength="10" type="text" name="apellido2" placeholder="2ndo Apellido">
+                     <input class="input-32"  required type="date" name="nacimiento" placeholder="fecha de nacimiento">
+                     <input class="input-32" required type="number" name="telf" min="100000000" max="999999999" placeholder="Nº telefono">
+                     <input class="input-32" required type="mail" name="blog" placeholder="Introcudir e-mail">
+                </div>
+                <div class="tipomusica">
+                    <p>Tipos de música preferidos:</p>
+                        <label for="rock" class="input-30">Rock<input type="checkbox" name="tipo[]" value="rock" id="rock"></label>
+                        <label for="pop" class="input-30">Pop<input type="checkbox" name="tipo[]" value="pop" id="pop"></label>
+                        <label for="electro" class="input-30">Electronica<input type="checkbox" name="tipo[]" value="electro" id="electro"></label>
+                        <label for="blues" class="input-30">Blues<input type="checkbox" name="tipo[]" value="blues" id="blues"></label>
+                        <label for="jazz" class="input-30">Jazz<input type="checkbox" name="tipo[]" value="jazz" id="jazz"></label>
+                        <label for="rnb" class="input-30">R'n'b<input type="checkbox" name="tipo[]" value="rnb" id="rnb"></label>
+                        <label for="dance" class="input-30">Dance<input type="checkbox" name="tipo[]" value="dance" id="dance"></label>
+                        <label for="autor" class="input-30">Cantautor<input type="checkbox" name="tipo[]" value="autor" id="autor"></label>
+                        <label for="alternativa" class="input-30">Alternativa<input type="checkbox" name="tipo[]" value="alternativa" id="alternativa"></label>
+                        <label for="heavy" class="input-30">Heavy Metal<input type="checkbox" name="tipo[]" value="heavy" id="heavy"></label>
+                        <label for="opera" class="input-30">Opera<input type="checkbox" name="tipo[]" value="opera" id="opera"></label>
+                </div>
+                
+                
+                <div class="posicionlist" >
+                  
+                  <div class="registrar" >
+                     <a href="#">Editar</a>
+                     <input class="boton-registro" type="submit" Value="Registrar">
+                  </div>
+                </div>
+               
+                     
+            </form>
+
+            <footer class="footer">
+               <div class="footer__about">
+                  <p> &copy Proyecto Transversal 2016.</p>
+                  <p>All rights reserved.</p>
+               </div>
+               <div class="footer__social">
+                  <a class="icon-facebook" href="#"></a>
+                  <a class="icon-twitter" href="#"></a>
+                  <a class="icon-instagram" href="#"></a>
+                  <a class="icon-google-plus" href="#"></a>
+               </div>
+            </footer>    
+            </div> 
+        </div>
+
+        </div>
+    </body>
+</html>
