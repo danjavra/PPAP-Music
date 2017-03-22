@@ -1,0 +1,123 @@
+.header{
+    border:solid 2px red; 
+    margin-left: 8%;
+    width:85%;
+    height: 350px;
+    background-image: url(sala.jpg);
+    background-size: cover;
+    text-align: center;
+    
+}
+img{
+  border:solid 2px orange; 
+  margin-top:10px;
+  width:80%;
+  height:250px;  
+  background-size:cover; 
+}
+
+.language{
+   border:solid 2px orange;
+   margin-left:70%;
+   margin-top:1%;
+   width:20%;
+   height:50px; 
+}
+
+.body{
+  border:solid 2px green;
+  margin-top:5px;
+  margin-left: 8%;
+  width:85%;
+  height:750px;  
+  background: -moz-linear-gradient(white, grey);
+  background: -webkit-linear-gradient(white, grey); 
+  text-align: center;
+}
+
+.content{
+    border:solid 2px yellow;
+    margin-top:20px;
+    margin-left: 5;
+    width:90%;
+    height:650px;
+    display: inline-block;
+    
+}
+
+h1{
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    height: 8%;
+    position: relative;
+    display: block;
+    margin-left: 10%;
+}
+
+.datospropietario{
+    width: 45%;
+    height:25%;
+    top: 8%;;
+    border: solid 2px black;
+    display:inline-block;
+    position: relative;
+}
+.tipomusica{
+    width: 45%;
+    height:25%;
+    vertical-align: top;
+    border: solid 2px black;
+    display:inline-block;
+    text-align: center;
+    position:relative;
+}
+.localaddress{
+    width: 45%;
+    height:25%;
+    vertical-align: top;
+    border: solid 2px black;
+    display:inline-block;
+    text-align: center;
+    position:relative;
+}
+.localdescrip{
+    width: 45%;
+    height:25%;
+    vertical-align: top;
+    border: solid 2px black;
+    display:inline-block;
+    text-align: center;
+    position:relative;
+}
+.uploadimg{
+    width: 45%;
+    height:25%;
+    vertical-align: top;
+    border: solid 2px black;
+    display:inline-block;
+    text-align: center;
+    position:relative;
+}
+.posicionlist{
+   width: 45%;
+    height:25%;
+    vertical-align: top;
+    border: solid 2px black;
+    display:inline-block;
+    text-align: center;
+    position:relative;
+    
+}
+
+.registrar{
+    width: 20%;
+    height:5%;
+    vertical-align: top;
+    border: solid 2px black;
+    display:inline-block;
+    text-align: center;
+    position: relative;
+    margin-left: 71%;
+}
+

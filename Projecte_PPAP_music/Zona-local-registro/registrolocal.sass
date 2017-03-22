@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+body, *
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: Roboto
+
+	.wrapper
+		width: 100%
+		height: 100%
+
+		/*****************  HEADER  *****************/
+
+
+		.header
+			width: 100%
+			height: 300px
+			
+
+			.imagen
+				width: 100%
+				height: 100%
+				background:
+					image: url(img/local_PPAP.jpg)
+					size: cover
+					repeat: no-repeat
+					position: center
+
+		.buttons
+			width: 100%
+			height: 10%
+			background: linear-gradient(30deg, pink, blue)
+			padding: 1em
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			.inicio
+				a
+					text-decoration: none
+					color: white
+					background: #21a1e1
+					padding: .5em 1.5em
+					transition: all ease-in-out 0.4s
+
+					&:hover
+						background: darken(#21a1e1, 10%)
+
+			.idioma
+				display: flex
+
+				a:not(:first-child)
+					margin-left: 1em
+				
+				.espana, .catalunya, .reino-unido
+					transition: all 0.3s ease-in-out 
+					&:hover
+						transform: scale(1.3)
+				
+
+
+				.espana
+					width: 40px
+					height: 25px
+					background: 
+						image: url(banderas/espana.png)
+						size: cover
+						position: center
+
+				.catalunya
+					width: 40px
+					height: 25px
+					background: 
+						image: url(banderas/catalunya.png)
+						size: cover
+						position: center
+
+				.reino-unido
+					width: 40px
+					height: 25px
+					background: 
+						image: url(banderas/reino-unido.png)
+						size: cover
+						position: center
+
+
+
+
+		.body
+			width: 100%
+			height: 100%
+			background:
+				image: url(img/fondo_form.jpg)
+				size: cover
+
+			.content
+				width: 100%
+				height: 100%
+
+				h1
+					text-align: center
+					padding: .5em .5em
+					// background: steelblue
+
+				form
+					width:  90%
+					height: 100%
+					margin:  1em auto 
+					display: flex
+					flex-wrap: wrap
+					background: rgba(white, .4)
+					border-radius: 1em
+
+					.datospropietario
+						width: 50%
+						height: 250px
+						// background: red
+						display: flex
+						flex-wrap: wrap
+						justify-content: space-between
+						align-items: center
+						padding: 1em
+
+						p
+							width: 100%
+							padding: 1em 1em 1em 0
+							font-size: 1.1em
+
+						.input-32
+							width: 32%
+							margin-bottom: 1em
+							padding: .8em
+							border: none
+							border-radius: .2em
+							transition: all ease-in-out 0.3s
+
+							&:hover
+								box-shadow: 0 0 0 2px #21a1e1 inset
+
+
+
+					.tipomusica
+						width: 50%
+						height: 250px
+						// background: blue
+						display: flex
+						flex-wrap: wrap
+						justify-content: space-between
+						align-items: center
+						padding: 1em
+
+						p
+							width: 100%
+							padding: 1em 1em 1em 0
+							font-size: 1.1em
+
+						.input-30
+							width: 20%
+							margin-bottom: 1.5em
+
+							input[type="checkbox"]
+								margin-left: 1em
+
+					.localaddress
+						width: 50%
+						height: 250px
+						// background: pink
+						display: flex
+						flex-wrap: wrap
+						justify-content: space-between
+						align-items: center
+						padding: 1em
+
+						p
+							width: 100%
+							padding: 1em 1em 1em 0
+							font-size: 1.1em
+
+						.input-32
+							width: 32%
+							margin-bottom: 1em
+							padding: .8em
+							border: none
+							border-radius: .2em
+							transition: all ease-in-out 0.3s
+
+							&:hover
+								box-shadow: 0 0 0 2px #21a1e1 inset
+
+						.input-49
+							width: 49%
+							margin-bottom: 1em
+							padding: .8em
+							border: none
+							border-radius: .2em
+							transition: all ease-in-out 0.3s
+
+							&:hover
+								box-shadow: 0 0 0 2px #21a1e1 inset
+
+					.localdescrip
+						width: 50%
+						height: 250px
+						// background: tomato
+						display: flex
+						flex-wrap: wrap
+						justify-content: space-between
+						align-items: center
+						padding: 1em
+
+						p
+							width: 100%
+							padding: 1em 1em 1em 0
+							font-size: 1.1em
+
+						.input, textarea
+							width: 48%	
+							padding: .8em
+							border: none
+							border-radius: .2em
+							transition: all ease-in-out 0.3s
+
+							&:hover
+								box-shadow: 0 0 0 2px #21a1e1 inset
+
+						textarea
+							max-width: 312.783px
+							max-height: 68px
+							min-width: 312.783px
+							min-height: 68px
+							font-size: .9em
+
+					.uploading
+						width: 50%
+						height: 200px
+						// background: skyblue
+						display: flex
+						flex-wrap: wrap
+						justify-content: space-between
+						align-items: center
+						padding: 1em
+
+						p
+							width: 100%
+							padding: 1em 1em 1em 0
+							font-size: 1.1em
+
+					.posicionlist
+						width: 50%
+						height: 200px
+						// background: crimson
+						display: flex
+						flex-wrap: wrap
+						align-items: center
+						padding: 1em
+
+					.first-part
+						width: 100%
+
+						p
+							padding: 1em 1em 1em 0
+							font-size: 1.1em
+
+						a
+							text-decoration: none
+							color: white
+							background: #21a1e1
+							padding: .5em 1em
+							transition: all ease-in-out 0.4s
+
+							&:hover
+								background: darken(#21a1e1, 10%)
+
+					.registrar
+						width: 100%
+						// background: crimson
+						display: flex
+						justify-content: flex-end
+						align-items: center
+
+						a
+							text-decoration: none
+							color: white
+							background: #21a1e1
+							padding: .5em 1em
+							font-size: 21px
+							transition: all ease-in-out 0.4s
+
+							&:hover
+								background: darken(#21a1e1, 10%)
+								
+						.boton-registro
+							border: none
+							color: white
+							background: #21a1e1
+							padding: .63em 1em
+							margin-left: .5em
+							cursor: pointer
+							font-size: 18px
+							transition: all ease-in-out 0.4s
+
+							&:hover
+								background: darken(#21a1e1, 10%)
+
+				.footer
+					background: linear-gradient(30deg, pink, blue)
+					padding: 1em
+					display: flex
+					min-height: 150px
+
+
+					&__about, &__social
+						width: 50%
+						min-height: 100%
+						
+
+					&__about
+						display: flex
+						text-align: center
+						flex-wrap: wrap
+						align-content: center
+
+						p
+							font-size: 1.1em
+							width: 100%
+
+					&__social
+						display: flex
+						justify-content: center
+						align-items: center
+
+
+						a
+					      background: rgba(white, .8)
+					      text-decoration: none
+					      color: black
+					      text-decoration: none
+					      margin: .5em
+					      padding: 1em
+					      line-height: 1em
+					      font-size: 20px
+					      border-radius: 50%
+					      transition: all ease-in-out 0.5s
+
+						.icon-facebook:hover
+						   background: #295396
+						   color: #fff
+						.icon-twitter:hover
+							background: #2EACF8
+							color: #fff
+						.icon-instagram:hover
+							background: #986954
+							color: #fff
+						.icon-google-plus:hover
+							background: #DC4A38
+							color: #fff
+
+
+
+
+
+
+						
+
+
+
+
+						
+
+

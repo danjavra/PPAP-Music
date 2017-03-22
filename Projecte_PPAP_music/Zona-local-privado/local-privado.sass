@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+$width-container: 32%
+
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: Roboto
+
+
+body
+	// padding: 1em
+
+	.wrapper
+		min-height: 100vh
+		.header
+			height: 300px
+			background:
+				image: url(img/local_PPAP.jpg)
+				size: cover
+				repeat: no-repeat
+				position: center
+			// margin-bottom: 2em
+
+	.botones
+		height: 10%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		// margin-bottom: 2em
+		background: linear-gradient(60deg, pink, blue)
+		padding: 1em
+
+		.inicio
+			a
+				text-decoration: none
+				background: #21a1e1
+				padding: .5em 1.5em
+				color: white
+				transition: all ease-in-out 0.4s
+
+				&:hover
+					background: darken(#21a1e1, 10%)
+
+		.banderas
+			display: flex
+
+			a:not(:first-child)
+				margin-left: 1em
+			
+			.espana, .catalunya, .reino-unido
+				transition: all 0.3s ease-in-out 
+				&:hover
+					transform: scale(1.3)
+			.espana
+				width: 40px
+				height: 25px
+				background: 
+					image: url(banderas/espana.png)
+					size: cover
+					position: center
+			.catalunya
+				width: 40px
+				height: 25px
+				background: 
+					image: url(banderas/catalunya.png)
+					size: cover
+					position: center
+			.reino-unido
+				width: 40px
+				height: 25px
+				background: 
+					image: url(banderas/reino-unido.png)
+					size: cover
+					position: center
+
+	.main
+		padding: .5em 1.5em
+		background:
+			image: url(img/fondo_form.jpg)
+			repeat: no-repeat
+			size: cover
+
+		h1
+			text-align: center
+			padding: .5em
+
+		
+		.grid-musicos
+			// background: red
+			min-height: 200px
+			display: flex
+			justify-content: space-between
+			margin-bottom: 1em
+			margin-top: 1em
+
+			.grid-1, .grid-2, .grid-3
+				background: #000
+				width: 32%
+				min-height: 100%
+				padding: 1em
+				background: rgba(white, .5)
+				border-radius: .5em
+
+				&__title
+					color: black
+					text-align: center
+					line-height: 1.5em
+					border-bottom: 1px solid rgba(black, .7)
+					margin-bottom: 1em
+				p
+					text-align: left
+					color: black
+					margin-bottom: 1em
+
+				.puntuacio
+					position: relative
+					top: 50%
+					transform: translateY(-50%)
+					text-align: center
+
+		.grid-conciertos
+			// background: red
+			&__title
+				text-align: center
+				padding: .5em
+				background: rgba(#21a1e1, .7)
+				margin-bottom: .5em
+				color: white
+				text-transform: uppercase
+				border-radius: .3em
+			.grid-conciertos-container
+				display: flex
+				justify-content: space-between
+				height: 200px
+				margin-bottom: 1em
+				.grid-1,.grid-2,.grid-3
+					background: #000
+					width: 32%
+					height: 100%
+					padding: 1em
+					color: black
+					text-align: center
+					background: rgba(white, .5)
+					border-radius: .5em
+
+					display: flex
+					justify-content: center
+					align-items: center
+					align-content: center
+					flex-wrap: wrap
+
+
+					p
+						margin-bottom: 1em
+						width: 100%
+					a
+						text-decoration: none
+						color: white
+						background: #21a1e1
+						padding: .5em 1em
+						transition: all ease-in-out 0.4s
+
+						&:hover
+							background: darken(#21a1e1, 10%)
+
+
+		h2.conciertos__title
+			margin-bottom: 1em
+			text-align: center
+			background: rgba(#21a1e1, .7)
+			margin-bottom: .5em
+			color: white
+			text-transform: uppercase
+			padding: .5em
+			border-radius: .3em
+		.container
+		  height: 250px
+		  // background: aqua
+		  display: flex
+		  color: black
+		  flex-direction: column
+		  align-content: space-between
+		  justify-content: space-between
+		  flex-wrap: wrap
+		  margin-bottom: 1em
+
+
+		  .first-row
+		    width: $width-container
+		    background: #000
+		    height: 32%
+		  .second-row
+		    width: $width-container
+		    height: 66%
+		  .third-row
+		    height: 32%
+		    width: $width-container
+		  .fourth-row
+		    width: $width-container
+		    height: 66%
+		    text-align: center
+		  .button
+		    width: $width-container
+		    height: 32%
+		    display: flex
+		    justify-content: flex-end
+		    align-items: flex-end
+
+		    a
+		      background: #21a1e1
+		      padding: .5em 1em
+		      text-decoration: none
+		      color: white
+		      transition: all ease-in-out 0.4s
+
+		      &:hover
+		      	background: darken(#21a1e1, 10%)
+
+		  .grid
+		  	display: flex
+		  	justify-content: center
+		  	align-items: center
+		  	background: rgba(white, .5)
+		  	color: black
+		  	border-radius: .3em
+
+		.dades-suscripcio
+		 	min-height: 200px
+		 	background: rgba(white, .5)
+		 	padding: 1em
+		 	display: flex
+		 	justify-content: center
+		 	align-items: center
+		 	flex-wrap: wrap
+		 	align-content: center
+		 	margin-bottom: 1.5em
+		 	border-radius: .3em
+
+		 	p
+		 		text-align: center
+		 		width: 100%
+		 		margin-bottom: .5em
+		 	a
+		 		padding: 1em 1em
+		 		background: #21a1e1
+		 		text-decoration: none
+		 		color: white
+		 		margin-left: 1em
+		 		transition: all ease-in-out 0.4s
+
+		 		&:hover
+		 			background: darken(#21a1e1, 10%)
+
+	.footer
+		background: linear-gradient(30deg, pink, blue)
+		padding: 1em
+		display: flex
+		min-height: 150px
+
+
+		&__about, &__social
+			width: 50%
+			min-height: 100%
+			
+
+		&__about
+			display: flex
+			text-align: center
+			flex-wrap: wrap
+			align-content: center
+
+
+			p
+				font-size: 1.1em
+				width: 100%
+
+		&__social
+			display: flex
+			justify-content: center
+			align-items: center
+
+
+			a
+		      background: rgba(white, .8)
+		      text-decoration: none
+		      color: black
+		      text-decoration: none
+		      margin: .5em
+		      padding: 1em
+		      line-height: 1em
+		      font-size: 20px
+		      border-radius: 50%
+		      transition: all ease-in-out 0.5s
+
+			.icon-facebook:hover
+			   background: #295396
+			   color: #fff
+			.icon-twitter:hover
+				background: #2EACF8
+				color: #fff
+			.icon-instagram:hover
+				background: #986954
+				color: #fff
+			.icon-google-plus:hover
+				background: #DC4A38
+				color: #fff
+			

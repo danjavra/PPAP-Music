@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto; }
+
+body .wrapper {
+  min-height: 100vh; }
+  body .wrapper .header {
+    height: 300px;
+    background-image: url(img/local_PPAP.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+body .botones {
+  height: 10%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient(60deg, pink, blue);
+  padding: 1em; }
+  body .botones .inicio a {
+    text-decoration: none;
+    background: #21a1e1;
+    padding: .5em 1.5em;
+    color: white;
+    transition: all ease-in-out 0.4s; }
+    body .botones .inicio a:hover {
+      background: #1982b6; }
+  body .botones .banderas {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    body .botones .banderas a:not(:first-child) {
+      margin-left: 1em; }
+    body .botones .banderas .espana, body .botones .banderas .catalunya, body .botones .banderas .reino-unido {
+      transition: all 0.3s ease-in-out; }
+      body .botones .banderas .espana:hover, body .botones .banderas .catalunya:hover, body .botones .banderas .reino-unido:hover {
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3); }
+    body .botones .banderas .espana {
+      width: 40px;
+      height: 25px;
+      background-image: url(banderas/espana.png);
+      background-size: cover;
+      background-position: center; }
+    body .botones .banderas .catalunya {
+      width: 40px;
+      height: 25px;
+      background-image: url(banderas/catalunya.png);
+      background-size: cover;
+      background-position: center; }
+    body .botones .banderas .reino-unido {
+      width: 40px;
+      height: 25px;
+      background-image: url(banderas/reino-unido.png);
+      background-size: cover;
+      background-position: center; }
+
+body .main {
+  padding: .5em 1.5em;
+  background-image: url(img/fondo_form.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  body .main h1 {
+    text-align: center;
+    padding: .5em; }
+  body .main .grid-musicos {
+    min-height: 200px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    margin-top: 1em; }
+    body .main .grid-musicos .grid-1, body .main .grid-musicos .grid-2, body .main .grid-musicos .grid-3 {
+      background: #000;
+      width: 32%;
+      min-height: 100%;
+      padding: 1em;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: .5em; }
+      body .main .grid-musicos .grid-1__title, body .main .grid-musicos .grid-2__title, body .main .grid-musicos .grid-3__title {
+        color: black;
+        text-align: center;
+        line-height: 1.5em;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+        margin-bottom: 1em; }
+      body .main .grid-musicos .grid-1 p, body .main .grid-musicos .grid-2 p, body .main .grid-musicos .grid-3 p {
+        text-align: left;
+        color: black;
+        margin-bottom: 1em; }
+      body .main .grid-musicos .grid-1 .puntuacio, body .main .grid-musicos .grid-2 .puntuacio, body .main .grid-musicos .grid-3 .puntuacio {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: center; }
+  body .main .grid-conciertos__title {
+    text-align: center;
+    padding: .5em;
+    background: rgba(33, 161, 225, 0.7);
+    margin-bottom: .5em;
+    color: white;
+    text-transform: uppercase;
+    border-radius: .3em; }
+  body .main .grid-conciertos .grid-conciertos-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 200px;
+    margin-bottom: 1em; }
+    body .main .grid-conciertos .grid-conciertos-container .grid-1, body .main .grid-conciertos .grid-conciertos-container .grid-2, body .main .grid-conciertos .grid-conciertos-container .grid-3 {
+      background: #000;
+      width: 32%;
+      height: 100%;
+      padding: 1em;
+      color: black;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: .5em;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      body .main .grid-conciertos .grid-conciertos-container .grid-1 p, body .main .grid-conciertos .grid-conciertos-container .grid-2 p, body .main .grid-conciertos .grid-conciertos-container .grid-3 p {
+        margin-bottom: 1em;
+        width: 100%; }
+      body .main .grid-conciertos .grid-conciertos-container .grid-1 a, body .main .grid-conciertos .grid-conciertos-container .grid-2 a, body .main .grid-conciertos .grid-conciertos-container .grid-3 a {
+        text-decoration: none;
+        color: white;
+        background: #21a1e1;
+        padding: .5em 1em;
+        transition: all ease-in-out 0.4s; }
+        body .main .grid-conciertos .grid-conciertos-container .grid-1 a:hover, body .main .grid-conciertos .grid-conciertos-container .grid-2 a:hover, body .main .grid-conciertos .grid-conciertos-container .grid-3 a:hover {
+          background: #1982b6; }
+  body .main h2.conciertos__title {
+    margin-bottom: 1em;
+    text-align: center;
+    background: rgba(33, 161, 225, 0.7);
+    margin-bottom: .5em;
+    color: white;
+    text-transform: uppercase;
+    padding: .5em;
+    border-radius: .3em; }
+  body .main .container {
+    height: 250px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: black;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 1em; }
+    body .main .container .first-row {
+      width: 32%;
+      background: #000;
+      height: 32%; }
+    body .main .container .second-row {
+      width: 32%;
+      height: 66%; }
+    body .main .container .third-row {
+      height: 32%;
+      width: 32%; }
+    body .main .container .fourth-row {
+      width: 32%;
+      height: 66%;
+      text-align: center; }
+    body .main .container .button {
+      width: 32%;
+      height: 32%;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+      align-items: flex-end; }
+      body .main .container .button a {
+        background: #21a1e1;
+        padding: .5em 1em;
+        text-decoration: none;
+        color: white;
+        transition: all ease-in-out 0.4s; }
+        body .main .container .button a:hover {
+          background: #1982b6; }
+    body .main .container .grid {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.5);
+      color: black;
+      border-radius: .3em; }
+  body .main .dades-suscripcio {
+    min-height: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1em;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    margin-bottom: 1.5em;
+    border-radius: .3em; }
+    body .main .dades-suscripcio p {
+      text-align: center;
+      width: 100%;
+      margin-bottom: .5em; }
+    body .main .dades-suscripcio a {
+      padding: 1em 1em;
+      background: #21a1e1;
+      text-decoration: none;
+      color: white;
+      margin-left: 1em;
+      transition: all ease-in-out 0.4s; }
+      body .main .dades-suscripcio a:hover {
+        background: #1982b6; }
+
+body .footer {
+  background: linear-gradient(30deg, pink, blue);
+  padding: 1em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 150px; }
+  body .footer__about, body .footer__social {
+    width: 50%;
+    min-height: 100%; }
+  body .footer__about {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+    body .footer__about p {
+      font-size: 1.1em;
+      width: 100%; }
+  body .footer__social {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    body .footer__social a {
+      background: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      color: black;
+      text-decoration: none;
+      margin: .5em;
+      padding: 1em;
+      line-height: 1em;
+      font-size: 20px;
+      border-radius: 50%;
+      transition: all ease-in-out 0.5s; }
+    body .footer__social .icon-facebook:hover {
+      background: #295396;
+      color: #fff; }
+    body .footer__social .icon-twitter:hover {
+      background: #2EACF8;
+      color: #fff; }
+    body .footer__social .icon-instagram:hover {
+      background: #986954;
+      color: #fff; }
+    body .footer__social .icon-google-plus:hover {
+      background: #DC4A38;
+      color: #fff; }
