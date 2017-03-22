@@ -5,7 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>Rusty feo x1000
+    <head>
         <meta charset="UTF-8">
         <title>Zona Privada Local</title>
         <div style="border:solid 2px red; margin-left: 400px; margin-right: 450px; width:50%; height: 270px;">
