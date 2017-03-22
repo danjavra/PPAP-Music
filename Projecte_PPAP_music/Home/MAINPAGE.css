@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+    background-color:white;
+}
+
+.div1 {
+    width: 100%; 
+    height: 280px;
+    background: linear-gradient(60deg, pink, blue);
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.imagen1 {
+  
+    height: 80%; 
+    width:100%;
+}
+.imagen1:hover{
+    opacity:0.7;
+}
+
+.select { 
+    color:white;
+    background-color: #21a1e1;
+    width: 100px; 
+    vertical-align:top; 
+    margin-top: 10px;
+    margin-left: 10px; 
+    height: 30px;
+}
+.headerbutton {
+    
+   display: inline-block;
+   height: 120px; 
+   width:50%;; 
+   vertical-align: top; 
+   
+  
+}
+
+.button1 {
+    font-size: 15px;
+    border: solid #21a1e1 1px;
+    padding:0;
+     color:white;
+    background-color: #21a1e1;
+     height: 30px; 
+   width:90px; 
+    margin-top: 10px;
+    margin-left:20px;
+    transition: all ease-in-out 0.3s;
+ 
+}
+
+.button2 {
+    font-size: 15px;
+    border: solid #21a1e1 1px;
+     color:white;
+    background-color: #21a1e1;
+  
+    margin-top: 10px;
+    margin-left:10px;
+    height: 30px; 
+    width:90px; 
+    transition: all ease-in-out 0.3s; 
+
+}
+
+.button1:hover, .button2:hover{
+    cursor:pointer;
+    background: #166B96;
+}
+
+.idioma {
+    display: inline-block;
+    width: 50%;
+    height: 120px;
+    position: absolute;
+}
+
+.idioma img {
+    top: 7px;
+    position: absolute;
+    height: 20%;
+    width: 5%;
+}
+
+.bandera1{
+    right: 20%;
+    transition: all 0.3s ease-in-out;
+}
+
+.bandera2{
+    right: 11%;
+    transition: all 0.3s ease-in-out;
+}
+
+.bandera3{
+    right: 2%;
+    transition: all 0.3s ease-in-out;
+}
+.idioma img:hover {
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3); 
+}
+
+.center {
+  
+    height: 950px;
+    width:100%;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.banner {
+    border-radius: 15px;
+    height: 130px; 
+    margin-top: 30px;
+    margin-left: 20px; 
+    margin-right: 20px; 
+    text-align: center;
+    width: 29%;
+    display: inline-block;
+    
+}
+
+.banner:hover {
+    opacity:0.8;
+}
+
+
+
+.tabla1 {
+    background-color:rgba(192,192,192,0.4);
+    border-radius: 1em;
+    padding: 1em;
+    height: 180px; 
+    margin-top: 30px;
+    margin-left: 60px; 
+    margin-right: 60px; 
+    text-align: center;
+     width: 90%;
+     padding-bottom: 30px;
+}
+.tabla1:hover{
+    opacity:0.9;
+}
+
+.tabla1 tr {
+    font-family:Roboto;
+    font-size:30px;
+}
+
+td input{
+   min-width: 300px;
+   font-size: 1rem;
+   text-align: center;
+}
+
+
+.tabla2 {
+   background-color:rgba(192,192,192,0.4);
+   border-radius: 1em;
+    height: 180px; 
+    margin-top: 150px;
+    margin-left: 60px; 
+    margin-right: 60px; 
+    text-align: center;
+     width: 90%;
+     padding-bottom: 30px;
+     padding-top: 20px;
+}
+
+.tabla2:hover{
+    opacity:0.9;
+}
+
+.tabla2 tr {
+    font-family:Roboto;
+    font-size:30px;
+}
+
+
+.block1 {
+    border:solid black 1px;
+    height:300px;
+    width:300px;
+    background-color: gray;
+        
+}
+
+
+
+.footer{
+    background: linear-gradient(60deg, pink, blue);
+    height: 10%;
+    width:100%;
+    position:absolute;
+}
+
+
+.footer a {
+    text-decoration: none;
+        background-color: gray;
+        padding: 5px;
+  
+}
+
+.footer ul li{
+    padding: 0.5em;
+}
+
+.des {
+    height: 30%;
+    width: 50%;
+}
+
+.des p {
+    
+    font-size: 20px;
+    margin-left: 90px;
+}
+
+
+
+.footerlogo {
+    top: 0;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ .footerlogo a{
+      background: rgba(255,255,255, 0.8);
+      text-decoration: none;
+      color: black;
+      padding: 1em;
+      margin: 1em .5em;
+      line-height: 1em;
+      font-size: 20px;
+      border-radius: 50%;
+      transition: all ease-in-out 0.5s;
+    }
+
+    .icon-facebook:hover{
+     background: #295396;
+     color: #fff;
+     }
+    .icon-twitter:hover{
+      background: #2EACF8;
+      color: #fff;
+      }
+    .icon-instagram:hover{
+      background: #986954;
+      color: #fff;
+      }
+    .icon-google:hover{
+      background: #DC4A38;
+      color: #fff;
+      }
+  
